@@ -20,6 +20,7 @@ initNavScrollFix();
 
 
 
+
 function initSwapColumns() {
 	// swap the class for #show-container 
 	// with three-col or six-col
@@ -180,17 +181,35 @@ function initPopUp() {
 	var signPopUp = $(".sign-pop-up")
 
 	signPopUp.click(function() {
-		$(".pop-up-show").fadeIn() //don't have to put a dot because it is a class
+		$(".pop-up-show").fadeIn("pop-up") //don't have to put a dot because it is a class
 	});
 
 	var xMark = $(".x-mark")
 
 	xMark.click(function(){
-		$(".pop-up-show").fadeOut();
+		$(".pop-up-show").fadeOut("pop-up")
 
 	});
 
 }
+
+// function initPopUp() {
+
+// 	var signPopUp = $(".sign-pop-up")
+
+// 	signPopUp.click(function() {
+// 		$(".pop-up-show").removeClass("pop-up") //don't have to put a dot because it is a class
+// 	});
+
+// 	var xMark = $(".x-mark")
+
+// 	xMark.click(function(){
+// 		$(".pop-up-show").addClass("pop-up")
+
+// 	});
+
+// }  //This is how to do it with just a pop-up.  The version above that I am using for the actual site is the fade in
+
 
 
 function initNavScrollFix(){
@@ -222,6 +241,7 @@ function initNavScrollFix(){
 
 	});
 }
+
 
 
 
