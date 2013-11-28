@@ -11,7 +11,7 @@
 }
 
 #wrapper{
-	width: 1440px;
+	width: 100%; /*width: 1440px;*/
 	margin: 0px auto;
 	background-color: white;
 }	
@@ -35,7 +35,7 @@
 	background-image: url('../images/cg-newflatimage3.png');
 	background-repeat: no-repeat;
 	background-position: 0px -40px;
-	background-size: 1440px 550px;
+	/*background-size: 1440px 550px;*/
 	min-height: 550px;
 	width: 100%;
 	text-indent: -9999px;
@@ -201,7 +201,7 @@
 }
 
 .homepage-image-home .right-arrow{
-	right: 10px;
+	right: 1%;
 }
 
 
