@@ -6,8 +6,6 @@ initDetailDropdown();
 
 initImageShow();
 
-// initVideoDropdown();
-
 initNavTopDropdown();
 
 initPopUp();

@@ -16,8 +16,6 @@
 	background-color: white;
 }	
 
-
-
 .homepage-image-home .gallery-holder {
 	height: 825px;
 	width: 100%;
@@ -35,7 +33,7 @@
 	background-image: url('../images/cg-newflatimage3.png');
 	background-repeat: no-repeat;
 	background-position: 0px -40px;
-	/*background-size: 1440px 550px;*/
+	background-size: 100% 550px;
 	min-height: 550px;
 	width: 100%;
 	text-indent: -9999px;
@@ -50,7 +48,7 @@
 	position: relative;
 	border: 1px solid lightgray;
 	height: 55px;
-	position: fixed; /*What is wrong here*/
+	position: fixed;
 	top: 0;
 	left: 0;
 	z-index: 1;
