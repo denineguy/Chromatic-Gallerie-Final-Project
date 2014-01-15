@@ -855,6 +855,12 @@
 	width: 12%;
 }
 
+.navigation-bottom-shop .side-view a{
+	font-size: 12px;
+	font-weight: normal;
+	}
+
+
 .navigation-bottom-shop li .navigation-inner-dropdown {
 	display: none;
 	position: absolute;
