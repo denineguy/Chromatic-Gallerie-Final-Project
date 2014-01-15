@@ -85,7 +85,7 @@ function initNavShopDropdown() {
 }
 
 function initNavTopDropdown() {
-	var filter = $( '.navigation-top li');
+	var filter = $( '.navigation-top .sign-in');
 
 	filter.hover(
 		function() {

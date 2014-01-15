@@ -7,38 +7,44 @@
 	<meta charset ="utf-8">
 </header>
 <body class="shop">
-	<div id="wrapper">
+	<div id="wrapper">		
 		<div class="navigation-top">
-			<ul class = "float-container">
-				<li class="li-nav">
-					<a href="shop.html"> Shop </a>
-				</li>
-				<li class="li-nav">
-					Story
-				</li>
-				<li class="li-logo">
-					<a href="index.html">
-						<img class ="logo1" src="images/cg-logoimage.jpeg"/>
-						<h1>CHROMATIC<span>gallerie</span></h1>
-					</a>
-				</li>
-				<li class="li-form">
-					<form name="searchform" method="post" action="search.php">
+			<div class="nav-wrapper float-container">		
+				<ul>
+					<li class="li-nav">
+						<a href="shop.html"> Shop </a>
+					</li>
+					<li class="li-nav">
+						<a href="story.html"> Story </a>
+					</li>
+				</ul>	
+				<div class="li-logo">
+					<h2 class="logo">
+						logo
+					</h2>
+					<h1>
+						<a href="index.html">
+							CHROMATICgallerie
+						</a>
+					</h1>
+				</div><!--Li Logo End -->
+				<div class="li-form">
+					<form  name="searchform" method="post" action="search.php">
 						<input type="search" id="searchphrase" name="searchphrase" placeholder="Search"/>
-						<a href="#"><img src="images/search-icon.png"></a>
+						<input type="submit" value="" id="search_button"/>
 					</form>	
-				</li>
-				<li class="li-nav">
+				</div><!--Li Form End -->
+				<div class="sign-in">
 					Sign In
-						<ul class="navigation-top-dropdown">
-							<a href="#"><li class="sign-pop-up">Log in</li></a>
-							<a href="register.html"><li>Create Account</li></a>
-						</ul>
-				</li>
-				<li class="li-cart">
+					<ul class="navigation-top-dropdown float-container">
+						<li class="sign-pop-up"><a href="#">Log in</a></li>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</div><!--Sign In End -->
+				<div class="li-cart">
 					<img src="images/shopping-bag-24.png" alt="Shopping Cart">
-				</li>
-			</ul>
+				</div><!--Li-Cart End -->
+			</div>	<!--Navigation Wrapper -->
 		</div> <!--Navigation Top End -->
 		<div class="homepage-image-shop">
 		</div>
@@ -48,55 +54,55 @@
 					<li class="nav-mid">
 						<a href="#">Color</a>
 						<ul class="navigation-inner-dropdown">
-							<li class="dropdown"><a href="filter">Black</a></li>
-							<li class="dropdown"><a href="filter">Nude</a></li>
-							<li class="dropdown"><a href="filter">Orange</a></li>
-							<li class="dropdown"><a href="filter">Red</a></li>
-							<li class="dropdown"><a href="filter">Pink</a></li>
-							<li class="dropdown"><a href="filter">Green</a></li>
-							<li class="dropdown"><a href="filter">Blue</a></li>
-							<li class="dropdown"><a href="filter">Purple</a></li>
+							<li class="dropdown"><a href="#">Black</a></li>
+							<li class="dropdown"><a href="#">Nude</a></li>
+							<li class="dropdown"><a href="#">Orange</a></li>
+							<li class="dropdown"><a href="#">Red</a></li>
+							<li class="dropdown"><a href="#">Pink</a></li>
+							<li class="dropdown"><a href="#">Green</a></li>
+							<li class="dropdown"><a href="#">Blue</a></li>
+							<li class="dropdown"><a href="#">Purple</a></li>
 						</ul>
 					</li>
 					<li class="nav-mid">
 						<a href="#">Material</a>
 						<ul class="navigation-inner-dropdown">
-							<li class="dropdown"><a href="filter">Leather</a></li>
-							<li class="dropdown"><a href="filter">Patent Leather</a></li>
-							<li class="dropdown"><a href="filter">Suede</a></li>
+							<li class="dropdown"><a href="#">Leather</a></li>
+							<li class="dropdown"><a href="#">Patent Leather</a></li>
+							<li class="dropdown"><a href="#">Suede</a></li>
 						</ul>
 					</li>
 					<li class="nav-mid">
 						<a href="#">Heel Height</a>
 						<ul class="navigation-inner-dropdown">
-							<li class="dropdown"><a href="filter">2 inches</a></li>
-							<li class="dropdown"><a href="filter">3 inches</a></li>
-							<li class="dropdown"><a href="filter">4 inches</a></li>
+							<li class="dropdown"><a href="#">2 inches</a></li>
+							<li class="dropdown"><a href="#">3 inches</a></li>
+							<li class="dropdown"><a href="#">4 inches</a></li>
 						</ul>
 					</li>
 					<li class="nav-mid">
 						<a href="#">Width</a>
 						<ul class="navigation-inner-dropdown">
-							<li class="dropdown"><a href="filter">Narrow</a></li>
-							<li class="dropdown"><a href="filter">Medium</a></li>
-							<li class="dropdown"><a href="filter">Width</a></li>
+							<li class="dropdown"><a href="#">Narrow</a></li>
+							<li class="dropdown"><a href="#">Medium</a></li>
+							<li class="dropdown"><a href="#">Width</a></li>
 						</ul>
 					</li>
 					<li class="nav-mid">
 						<a href="#">Size</a>
 						<ul class="navigation-inner-dropdown">
-							<li class="dropdown"><a href="filter">5.5</a></li>
-							<li class="dropdown"><a href="filter">6</a></li>
-							<li class="dropdown"><a href="filter">6.5</a></li>
-							<li class="dropdown"><a href="filter">7</a></li>
-							<li class="dropdown"><a href="filter">7.5</a></li>
-							<li class="dropdown"><a href="filter">8</a></li>
-							<li class="dropdown"><a href="filter">8.5</a></li>
-							<li class="dropdown"><a href="filter">9</a></li>
-							<li class="dropdown"><a href="filter">9.5</a></li>
-							<li class="dropdown"><a href="filter">10</a></li>
-							<li class="dropdown"><a href="filter">10.5</a></li>
-							<li class="dropdown"><a href="filter">11</a></li>
+							<li class="dropdown"><a href="#">5.5</a></li>
+							<li class="dropdown"><a href="#">6</a></li>
+							<li class="dropdown"><a href="#">6.5</a></li>
+							<li class="dropdown"><a href="#">7</a></li>
+							<li class="dropdown"><a href="#">7.5</a></li>
+							<li class="dropdown"><a href="#">8</a></li>
+							<li class="dropdown"><a href="#">8.5</a></li>
+							<li class="dropdown"><a href="#">9</a></li>
+							<li class="dropdown"><a href="#">9.5</a></li>
+							<li class="dropdown"><a href="#">10</a></li>
+							<li class="dropdown"><a href="#">10.5</a></li>
+							<li class="dropdown"><a href="#">11</a></li>
 						</ul>
 					</li>
 					<li class="side-view">

@@ -9,32 +9,42 @@
 <body class="shop">
 	<div id="wrapper">
 		<div class="navigation-top">
-			<ul class = "float-container">
-				<li class="li-nav">
-					<a href="shop.html"> Shop </a>
-				</li>
-				<li class="li-nav">
-					<a href="#"> Story </a>
-				</li>
-				<li class="li-logo">
-					<a href="index.html">
-						<img class ="logo1" src="images/cg-logoimage.jpeg"/>
-						<h1>CHROMATIC<span>gallerie</span></h1>
-					</a>
-				</li>
-				<li class="li-form">
-					<form name="searchform" method="post" action="search.php">
+			<div class="nav-wrapper float-container">		
+				<ul>
+					<li class="li-nav">
+						<a href="shop.html"> Shop </a>
+					</li>
+					<li class="li-nav">
+						<a href="story.html"> Story </a>
+					</li>
+				</ul>	
+				<div class="li-logo">
+					<h2 class="logo">
+						logo
+					</h2>
+					<h1>
+						<a href="index.html">
+							CHROMATICgallerie
+						</a>
+					</h1>
+				</div><!--Li Logo End -->
+				<div class="li-form">
+					<form  name="searchform" method="post" action="search.php">
 						<input type="search" id="searchphrase" name="searchphrase" placeholder="Search"/>
-						<a href="#"><img src="images/search-icon.png"></a>
+						<input type="submit" value="" id="search_button"/>
 					</form>	
-				</li>
-				<li class="li-nav">
-					<a href="register.html"> Sign In</a>
-				</li>
-				<li class="li-cart">
-					<img href="#" Shopping Cart>
-				</li>
-			</ul>
+				</div><!--Li Form End -->
+				<div class="sign-in">
+					Sign In
+					<ul class="navigation-top-dropdown float-container">
+						<li class="sign-pop-up"><a href="#">Log in</a></li>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</div><!--Sign In End -->
+				<div class="li-cart">
+					<img src="images/shopping-bag-24.png" alt="Shopping Cart">
+				</div><!--Li-Cart End -->
+			</div>	<!--Navigation Wrapper -->
 		</div> <!--Navigation Top End -->
 		<div class="homepage-image-shop">
 		</div>

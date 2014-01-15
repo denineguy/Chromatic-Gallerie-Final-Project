@@ -10,36 +10,44 @@
 <body class="home">
 	<div id="wrapper">
 		<div class="navigation-top">
-			<ul class = "float-container">
-				<li class="li-nav">
-					<a href="shop.html"> Shop </a>
-				</li>
-				<li class="li-nav">
-					Story
-				</li>
-				<li class="li-logo">
-					<a href="index.html">
-						<img class ="logo1" src="images/cg-logoimage.jpeg"/>
-						<h1>CHROMATICgallerie</h1>
-					</a>
-				</li>
-				<li class="li-form">
+			<div class="nav-wrapper float-container">		
+				<ul>
+					<li class="li-nav">
+						<a href="shop.html"> Shop </a>
+					</li>
+					<li class="li-nav">
+						<a href="story.html"> Story </a>
+					</li>
+				</ul>	
+				<div class="li-logo">
+					<h2 class="logo">
+						logo
+					</h2>
+					<h1>
+						<a href="index.html">
+							CHROMATICgallerie
+						</a>
+					</h1>
+				</div><!--Li Logo End -->
+				<div class="li-form">
 					<form  name="searchform" method="post" action="search.php">
 						<input type="search" id="searchphrase" name="searchphrase" placeholder="Search"/>
-						<a href="#"><img src="images/search-icon.png"></a>
+						<input type="submit" value="" id="search_button"/>
+						<!-- <a href="#"><img src="images/search-icon.png"></a> -->
 					</form>	
-				</li>
-				<li class="li-nav">
+					<!-- change to button and then make a backround image  will have to change to block position it absolute -->
+				</div><!--Li Form End -->
+				<div class="sign-in">
 					Sign In
-						<ul class="navigation-top-dropdown">
-							<li class="sign-pop-up"><a href="#">Log in</a></li>
-							<li><a href="register.html">Create Account</a></li>
-						</ul>
-				</li>
-				<li class="li-cart">
+					<ul class="navigation-top-dropdown float-container">
+						<li class="sign-pop-up"><a href="#">Log in</a></li>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</div><!--Sign In End -->
+				<div class="li-cart">
 					<img src="images/shopping-bag-24.png" alt="Shopping Cart">
-				</li>
-			</ul>
+				</div><!--Li-Cart End -->
+			</div>	
 		</div> <!--Navigation Top End -->
 		<div class="homepage-image-home">
 			<!-- Shop Chromatic Gallerie -->
@@ -61,7 +69,7 @@
 						<a href="#How It Works">How It Works</a>
 					</li>
 					<li id ="story">
-						<a href="#Our Story">Our Story</a>
+						<a href="#Our Story">About Us</a>
 					</li>
 					<li id ="new-product">
 						<a href="#New Product">New Product Releases</a>
@@ -72,9 +80,6 @@
 
 		<div id = "product-container">
 			<div class= "product-wrapper">
-				<!-- <p class="scroll">
-					Hello Wrold
-				</p> -->
 				<h4 id="scroll-how">
 					<a name="How It Works">How It Works
 					</a>
@@ -100,7 +105,7 @@
 						<p>
 							Choose Your Color
 						</p>
-						<h3> Choose from an array of colors, from black to white, pink to green we've got you covered. Our heels are highly pigmented.  It's your style in living color.
+						<h3> Choose from an array of colors, black to white, pink to green we have you covered. Our heels are highly pigmented.  It's your style in living color.
 						</h3>
 					</div>
 					<div class="cg-desc3">
@@ -108,7 +113,7 @@
 						<p>
 							Choose Your Heel Height
 						</p>
-						<h3> Pick the height that suits your mood or needs. Our heels range in height from 2-inches, 3-inches or 4-inches and now we even carry flats.
+						<h3> Pick the heel height that suits your mood or needs. Our heels range in height from 2-inches, 3-inches or 4-inches and now we even carry flats.
 						</h3>
 					</div>
 				</div><!--CG Description-->		
@@ -117,8 +122,8 @@
 		<div id = "video-container"> 
 			<div class ="video-wrapper">
 				<h4 id="scroll-story">
-					<a name="Our Story">
-					Our Story
+					<a name="About Us">
+					About Us
 					</a>
 				</h4>
 				<h2>
@@ -131,26 +136,25 @@
 			<div class = "video-showcase">
 				<div class= "float-container">
 					<div class="image-box" data-video-url="http://www.youtube.com/embed/qyYncO1EPok?rel=0">
-							<img src="images/behind-the-scenes.png">
-							<img class="play-btn" src="images/video-arrow.png">
-							<p> Watch Behind the Scenes
-							</p>
+						<img src="images/behind-the-scenes.png">
+						<div class="play-btn">
+							<img class="play" src="images/video-arrow.png">
+						</div>		
+						<p> Watch Behind the Scenes</p>
 					</div><!--Image Box-->
 					<div class="image-box" data-video-url="http://www.youtube.com/embed/-SA9rOtJBho?rel=0">
 						<img src="images/shoe-review2.png">
-						<img class="play-btn" src="images/video-arrow.png">
 						<div class="play-btn">
-							</div>
-						<p> Watch the Shoe Review
-						</p>
+							<img class="play" src="images/video-arrow.png">
+						</div>	
+						<p> Watch the Shoe Review</p>
 					</div><!--Image Box-->
 					<div class="image-box" data-video-url="http://www.youtube.com/embed/ZQxTeiNLPgU?rel=0">
 						<img src="images/style-guide.png">
-						<img class="play-btn" src="images/video-arrow.png">
 						<div class="play-btn">
-							</div>	
-						<p> Watch the Style Guide
-						</p>
+							<img class="play" src="images/video-arrow.png">		
+						</div>
+						<p> Watch the Style Guide</p>
 					</div> <!--Image Box-->
 				</div><!--Video Showcase-->
 			</div> <!--Video Sample -->
@@ -212,7 +216,7 @@
 							<li><a href="#">Rewards Program</a></li>
 							<li><a href="#">Press/Advertising</a></li>
 						</ul>
-						<a href="#"><h4>See More</h4></a>
+						<h4><a href="#">See More</a></h4>
 					</div><!--Company Info1-->
 					<div class="company-info2">
 						<h3> Services </h3>
@@ -222,13 +226,14 @@
 							<li><a href="#">Shipping and Delivery</a></li>
 							<li><a href="#">Gift Cards</a></li>
 						</ul>
-						<a href="#"><h4>See More</h4></a>
+						<h4><a href="#">See More</a></h4>
 					</div><!--Company Info2-->
 					<div class="company-info3">
 						<h3> Register</h3>
-						<p>Register with Chromatic Gallerie and become the first to know about our new products and special offers.</p>
-						<a href="#"><h4>Sign Up</h4></a>
-					</div><!--Company Info3-->
+						<p>Register with Chromatic Gallerie and become the first to know about our new products and special offers.</p>	
+						<h4><a href="#">Sign Up</a></h4>
+					</div>
+						<!--Company Info3-->
 				</div><!--Company Info Wrapper-->
 			</div><!--Footer 1 Container-->
 			<div id="footer2-container">

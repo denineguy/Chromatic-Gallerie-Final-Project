@@ -8,37 +8,43 @@
 </header>
 <body class="registration">
 	<div id="wrapper">
-		<div class="navigation-top">
-			<ul class = "float-container">
-				<li class="li-nav">
-					<a href="shop.html"> Shop </a>
-				</li>
-				<li class="li-nav">
-					Story
-				</li>
-				<li class="li-logo">
-					<a href="index.html">
-						<img class ="logo1" src="images/cg-logoimage.jpeg"/>
-						<h1>CHROMATIC<span>gallerie</span></h1>
-					</a>
-				</li>
-				<li class="li-form">
-					<form name="searchform" method="post" action="search.php">
+				<div class="navigation-top">
+			<div class="nav-wrapper float-container">		
+				<ul>
+					<li class="li-nav">
+						<a href="shop.html"> Shop </a>
+					</li>
+					<li class="li-nav">
+						<a href="story.html"> Story </a>
+					</li>
+				</ul>	
+				<div class="li-logo">
+					<h2 class="logo">
+						logo
+					</h2>
+					<h1>
+						<a href="index.html">
+							CHROMATICgallerie
+						</a>
+					</h1>
+				</div><!--Li Logo End -->
+				<div class="li-form">
+					<form  name="searchform" method="post" action="search.php">
 						<input type="search" id="searchphrase" name="searchphrase" placeholder="Search"/>
-						<a href="#"><img src="images/search-icon.png"></a>
+						<input type="submit" value="" id="search_button"/>
 					</form>	
-				</li>
-				<li class="li-nav">
+				</div><!--Li Form End -->
+				<div class="sign-in">
 					Sign In
-						<ul class="navigation-top-dropdown">
-							<li class="sign-pop-up">Log in</li>
-							<li><a href="register.html">Create Account</a></li>
-						</ul>
-				</li>
-				<li class="li-cart">
+					<ul class="navigation-top-dropdown float-container">
+						<li class="sign-pop-up"><a href="#">Log in</a></li>
+						<li><a href="register.html">Create Account</a></li>
+					</ul>
+				</div><!--Sign In End -->
+				<div class="li-cart">
 					<img src="images/shopping-bag-24.png" alt="Shopping Cart">
-				</li>
-			</ul>
+				</div><!--Li-Cart End -->
+			</div>	<!--Navigation Wrapper -->
 		</div> <!--Navigation Top End -->
 		<div class="registration-wrapper">
 			<h1 class="register">Register</h1>
@@ -66,7 +72,7 @@
 					<div class="form-container">
 						<h3>Contact Details</h3>
 						<form name="myForm" action="demo_form.asp" onsubmit="return validateForm()" method="post" class="float-container">
-							<p>First Name:*</p><input type="text" id="first_name" name="fname"><span class="error" id="first_name_error">Please enter a first name</span>
+							<p>First Name:*</p><input type="text" id="first_name" name="fname"><span class="error" id="first_name_error">Please enter a first name</span><br>
 							
 							<p>Last Name:*</p>
 							<input type="text" id="last_name" name="lname">
@@ -141,12 +147,12 @@
 							<p>Country:</p>
 							<input type="text" name="country" placeholder="USA"><br>
 							<p>Telephone (mobile)*:</p>
-							<input type="text" id="user_ph"name="mobile"><span class="error"id="user_ph_error">Phone number must be valid (555)-555-5555</span>
+							<input type="text" id="user_ph"name="mobile"><span class="error"id="user_ph_error">Phone number must be valid (555)-555-5555</span><br>
 							<p>Telephone (other):</p>
 							<input type="text" name="other"><br>
 							<div id="check">
-								<input class="checkbox" type="checkbox" name="vehicle" value="email-notice">I wish to receive Zara news on my e-mail <br>
-								<input class ="checkbox" type="checkbox" name="vehicle" value="privacy"> accept the privacy statement.
+								<input class="checkbox" type="checkbox" name="vehicle" value="email-notice">I wish to receive Chromatic Gallerie news via my e-mail <br>
+								<input class ="checkbox" type="checkbox" name="vehicle" value="privacy">I accept the privacy statement.
 							</div>
 							<input class="submit" type="submit" value="Submit">
 						</form>
