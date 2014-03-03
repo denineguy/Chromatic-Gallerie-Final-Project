@@ -18,11 +18,9 @@ initNavScrollFix();
 
 
 
-
+// This will change the view from 3 shoes per row to 6 shoes per row
 function initSwapColumns() {
-	// swap the class for #show-container 
-	// with three-col or six-col
-
+	
 	var imageView = $('.image-view');
 
 	if ( imageView.length == 0 ) return;
@@ -42,15 +40,13 @@ function initSwapColumns() {
 	});
 }
 
-
+//This operation the image slider on the home page. Will slide between 4 images
 function initHomepageSlider() {
-	// only for homepage slider!!
 
 	var home = $('.home');
 
 	if ( home.length == 0 ) return;
 
-	// if we are here, then we are on the home page
 
 	var slider = $('.bxslider').bxSlider({
 		auto: true,
@@ -65,6 +61,7 @@ function initHomepageSlider() {
 	});
 }
 
+// This operates with filter dropdown when someone hovers over the menu option
 function initNavShopDropdown() {
 	var shop = $('.shop');
 
@@ -84,6 +81,8 @@ function initNavShopDropdown() {
 	);
 }
 
+
+// This operates the filter dropdown for the top navigation bar when someone hovers over the menu options
 function initNavTopDropdown() {
 	var filter = $( '.navigation-top .sign-in');
 
@@ -100,13 +99,14 @@ function initNavTopDropdown() {
 }
 
 
+//This control the extra detal on the product detail page.  Click the plus sign to shom more info.  Click the minus sign to hide the info
 function initDetailDropdown() {
 	var detail = $('.detail');
 
 	if ( detail.length == 0 ) return;
 
 	var sign = $( '.plus');
-	$(sign).click(function(){ //sign could have been '.plus'
+	$(sign).click(function(){ 
 		var slider = $( this ).next();  
 	    slider.stop().slideToggle();
 	    var image = $( this ).find('img');
@@ -121,6 +121,7 @@ function initDetailDropdown() {
 
 }
 
+// This will show the different image view of the show, once hovered over.
 function initImageShow() {
 	var detail =$('.detail');
 
@@ -128,13 +129,14 @@ function initImageShow() {
 
 	var smallImage = $('.small-image');
 
-	$(smallImage).hover(function(){ //image could have been('.small-image')
+	$(smallImage).hover(function(){ 
 		var productImage = $('.reel');
 		var theurl = $(this).attr('src');
 		productImage.attr('src',theurl);
 	})
 };	
 
+// This allows user to quickly scroll to select information if menu option is clicked
 $("#how-works").click(function() {
 	$('html, body').animate({  
 	    scrollTop: $(".product-wrapper").offset().top
@@ -158,6 +160,7 @@ $("#new-product").click(function() {
 });
 
 	
+// This will open a hidden division to display and play the video	
 function initSwitchImage(){	
 
 	var imageBox = $(".image-box")
@@ -173,13 +176,13 @@ function initSwitchImage(){
 
 }
 
-
+//This operate the sign-in pop-up
 function initPopUp() {
 
 	var signPopUp = $(".sign-pop-up")
 
 	signPopUp.click(function() {
-		$(".pop-up-show").fadeIn("pop-up") //don't have to put a dot because it is a class
+		$(".pop-up-show").fadeIn("pop-up") 
 	});
 
 	var xMark = $(".x-mark")
@@ -191,25 +194,8 @@ function initPopUp() {
 
 }
 
-// function initPopUp() {
 
-// 	var signPopUp = $(".sign-pop-up")
-
-// 	signPopUp.click(function() {
-// 		$(".pop-up-show").removeClass("pop-up") //don't have to put a dot because it is a class
-// 	});
-
-// 	var xMark = $(".x-mark")
-
-// 	xMark.click(function(){
-// 		$(".pop-up-show").addClass("pop-up")
-
-// 	});
-
-// }  //This is how to do it with just a pop-up.  The version above that I am using for the actual site is the fade in
-
-
-
+//This will operate the scrolling-fixed navigation bar
 function initNavScrollFix(){
 
 	$( document).scroll( function() {
@@ -218,11 +204,7 @@ function initNavScrollFix(){
 	});
 
 	 $(document).ready(function() {
-	  //change the integers below to match the height of your upper dive, which I called
-	  //banner.  Just add a 1 to the last number.  console.log($(window).scrollTop())
-	  //to figure out what the scroll position is when exactly you want to fix the nav
-	  //bar or div or whatever.  I stuck in the console.log for you.  Just remove when
-	  //you know the position.
+	  
 	  $(window).scroll(function () { 
 
 	    console.log($(window).scrollTop());
@@ -240,9 +222,7 @@ function initNavScrollFix(){
 	});
 }
 
-
-
-
+// This performs form validation when the submit button is clicked
 $(document).ready(function(){
 	$('.error').hide();
 
